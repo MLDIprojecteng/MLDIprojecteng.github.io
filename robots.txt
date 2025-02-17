@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /includes/
+
+User-agent: Googlebot
+Allow: /includes/
