@@ -338,6 +338,50 @@
             background: #e9ecef;
             color: #667eea;
         }
+
+                .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: slideInUp 1s ease-out 0.4s both;
+        }
+        
+        .btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            box-shadow: 0 8px 25px rgba(255,107,107,0.3);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(255,107,107,0.4);
+        }
+        
+        .btn-secondary {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-3px);
+        }
         
         /* Footer */
         footer {
@@ -440,6 +484,8 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        
     </style>
 </head>
 <body>
@@ -508,11 +554,12 @@
                             <li><strong>Replayability:</strong> Hidden secrets and alternative paths encourage replaying levels</li>
                         </ul>
 
-                        <p>Link to the main page of the game Super Turtle World:</p>
-                       
-                            <a href="https://https://mldiprojecteng.github.io/main.html" class="btn btn-primary" target="_blank">
+                         <div class="cta-buttons">
+                            <a href="https://https://mldiprojecteng.github.io/main.html" class="btn btn-secondary">
+                                🎮 Link to the main page of the game Super Turtle World
                             </a>
-                      
+                        </div>
+
                     </section>
 
                     <!-- Ad Banner -->
